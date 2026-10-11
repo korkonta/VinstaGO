@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #1e1e1e; }
+#app, canvas { display: block; width: 100%; height: 100%; }
+.overlay {
+  position: fixed; top: 12px; left: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+  font: 12px ui-monospace, Menlo, Consolas, monospace; color: #ddd;
+}
+.overlay h1 { margin: 0; font-size: 14px; font-weight: 600; }
+.overlay button {
+  font: inherit; padding: 4px 8px; color: #888; background: #2a2a2a;
+  border: 1px solid #444; border-radius: 4px;
+}
+.overlay button:disabled { cursor: not-allowed; opacity: 0.6; }
